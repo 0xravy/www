@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+:root {
+  --terminal-size: 23px;
+  --terminal-font: "Pixelify Sans", sans-serif;
+}
+
+* {
+  font-family: var(--terminal-font);
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  margin: 5px;
+  padding: 0;
+}
+
+.terminal {
+  display: flex;
+  flex-direction: column;
+  algin-items: start;
+  width: 100vw;
+  height: 100vh;
+  font-size: var(--terminal-size);
+}
+p {
+  margin: 0;
+}
+
+.shellStyle {
+  display: flex;
+  algin-items: center;
+  height: var(--terminal-size);
+  gap: 5px;
+}
+
+#termInput {
+  height: 100%;
+  width: 77%;
+  background: none;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: var(--terminal-size);
+}
