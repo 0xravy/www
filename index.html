@@ -8,18 +8,30 @@
     <script defer src="main.js"></script>
   </head>
   <body>
-    <div class="terminal" onclick="elemInput.focus()">
-      <div id="termOutput"></div>
-      <div class="shellStyle">
-        <p>
-          <span style="color: yellow">ravy</span
-          ><span style="color: red">@</span
-          ><span style="color: cyan">desktop</span
-          ><span style="color: white">:</span><span style="color: pink">~</span
-          ><span style="color: yellowgreen"> $ </span>
-        </p>
-        <input id="termInput" />
+    <main>
+      <div class="bg">
+        <video id="myvideo" playsinline autoplay muted loop>
+          <source src="./penguins.mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
-    </div>
+      <!--Terminal-->
+      <div class="terminal" onclick="elemInput.focus()">
+        <!--Terminal Output-->
+        <div id="termOutput"></div>
+        <!--Terminal Input-->
+        <div class="commandContainer">
+          <p class="shellStyle">
+            <span style="color: yellow">ravy</span
+            ><span style="color: red">@</span
+            ><span style="color: cyan">desktop</span
+            ><span style="color: white">:</span
+            ><span style="color: pink">~</span
+            ><span style="color: yellowgreen"> $ </span>
+          </p>
+          <input id="termInput" />
+        </div>
+      </div>
+    </main>
   </body>
 </html>

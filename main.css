@@ -11,12 +11,28 @@
 }
 
 body {
-  background: black;
+  background-color: black;
   color: white;
-  margin: 5px;
+  margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
+.bg {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg video {
+  width: 100%;
+  hegiht: 100%;
+}
+
+main {
+  background-color: #000000cf;
+}
 .terminal {
   display: flex;
   flex-direction: column;
@@ -24,21 +40,27 @@ body {
   width: 100vw;
   height: 100vh;
   font-size: var(--terminal-size);
-}
-p {
-  margin: 0;
+  padding: 20px;
 }
 
-.shellStyle {
+.shellStyle,
+.commandContainer {
   display: flex;
-  algin-items: center;
+  flex-warp: nowarp;
   height: var(--terminal-size);
+}
+.commandContainer {
   gap: 5px;
 }
 
+.terminal p {
+  white-space: break-spaces;
+  margin: 0;
+  line-width: 10px;
+}
 #termInput {
   height: 100%;
-  width: 77%;
+  width: calc(100% - 210px);
   background: none;
   color: white;
   border: none;
